@@ -25,7 +25,7 @@
       "source": "Spag City",
       "deliveryTime": "35 mins",
       "image": "https://guardian.ng/wp-content/uploads/2022/10/Stirfry-spaghetti.jpeg",
-      "options": {  "chicken": 0, "turkey": 1}
+      "options": { "chicken": 0, "turkey": 1 }
     },
     {
       "foodName": "item 7 rice",
@@ -52,7 +52,7 @@
       "source": "Rita's Treats",
       "deliveryTime": "20 mins",
       "image": "https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg",
-      "options": { "small": 0, "jumbo": 1}
+      "options": { "small": 0, "jumbo": 1 }
     },
     {
       "foodName": "Juicy Meatpie",
@@ -108,5 +108,27 @@
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 }
     }
+  ],
+
+  "locations": [
+    { "locationName": "Rubiks" },
+    { "locationName": "Kikelomo" },
+    { "locationName": "Pyramid" },
+    { "locationName": "Abuja" },
+    { "locationName": "Queens" },
+    { "locationName": "ASUU" },
+    { "locationName": "Arafims 1" },
+    { "locationName": "Arafims 2" },
+    { "locationName": "Off-Campus" }
+  ],
+
+  "categories":[
+    {"id":0, "categoryName":"Breakfast", "img": ""},
+    {"id":1, "categoryName":"Spicy", "img": ""},
+    {"id":2, "categoryName":"Full Meal", "img": ""},
+    {"id":3, "categoryName":"Snacks", "img": ""},
+    {"id":4, "categoryName":"Groceries", "img": ""},
+    {"id":5, "categoryName":"Vegan", "img": ""},
+    {"id":6, "categoryName":"Treats", "img": ""}
   ]
 }

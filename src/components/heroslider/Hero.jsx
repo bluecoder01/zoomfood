@@ -1,15 +1,16 @@
 import React from 'react'
 import HeroSlider from './HeroSlider'
 import Locationform from './Locationform'
+import "./index.scss"
 
 function Hero() {
   return (
     <div className='hero'>
         <HeroSlider direction="left"/>
         <div className="hero-text">
-          <h1 className='title'>Get the best food on campus delivered to your doorstep</h1>
+          <h1 className='title'>Get <span className='clr-orange'>the best food</span> on campus delivered <span className='clr-orange'>to your doorstep</span>.</h1>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint mollitia quaerat, molestiae enim nostrum quae. Architecto voluptates tenetur nisi consequuntur ducimus asperiores non cum quasi sint, enim, repellat vel dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit incidunt tempora omnis unde ab est.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint mollitia quaerat, molestiae enim nostrum quae. Architecto voluptates tenetur nisi consequuntur ducimus asperiores non cum quasi sint, enim.
           </p>
           <Locationform />
           <p className="popular">
