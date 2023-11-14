@@ -14,6 +14,7 @@ header{
     }
 
 
+
     .search-bar{
         display: flex;
         border: 2px solid #d4d4d4;
@@ -41,16 +42,23 @@ header{
             fill: #808080;
         }
     }
+
+    .logo{
+        width: 200px;
+    }
+    .ham8{
+        z-index: 999;
+    }
 }
 
 //DESKTOP STYLING
-@media only screen and (min-width:1024px){
+@media only screen  and (min-width:1024px){
     header{
-        padding: 2rem 4rem;
+        padding: 2rem 3rem;
         align-items: center;
 
-        .logo{
-            width: 200px;
+        .ham8{
+            display: none;
         }
 
         .search-bar{
@@ -58,16 +66,34 @@ header{
             align-items: center;
             display: flex;
             border-radius: 8px;
-            gap: 3vw;
+            width: 60%;
+            justify-content: space-between;
+
+            input{
+                width: 100%;
+                font-size: 70%;
+            }
+        }
+
+        nav{
+            display: flex;
+            width: 62vw;
+            justify-content: space-between;
         }
 
         ul, .col-3{
             display: flex;
             gap: 1rem;
             align-items: center;
-
+            justify-content: space-between;
         }
-        
+
+        .col-3{
+            width: 44%;
+            gap: 0;
+        }
+
+
         ul{
             a{
                 cursor: pointer;
@@ -79,4 +105,133 @@ header{
             }
         }
     }
+
+    button{
+        width: max-content;
+    }
+
+    .fa-burger{
+        display: none;
+    }
+}
+
+//Mobile Styling
+ @media only screen and (max-width:1024px){
+
+    header{
+        padding: 2em;
+        padding-bottom: 0;
+        align-items: center;
+        padding-top: 1em;
+
+        .ham8{
+            transform: translateX(1rem);
+
+            &.active{
+                transform: translateX(1rem) rotate(45deg);
+            }
+
+            &.active *{
+                stroke: white;    
+            }
+        }
+
+        .logo{
+            width: 160px;
+        }
+
+        nav{
+            position: absolute;
+            background: $clr-primary-100;
+            width: 70vw;
+            height: 100vh;
+            padding-left: 15%;
+            right: 0;
+            top: 0;
+            z-index: 998;
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            padding-top: 6rem;
+            align-items: flex-start;
+            transform: translateX(100%);
+            transition: transform 300ms ease-out;
+            
+            &.active{
+                transform: translate(0);
+
+                ul{
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+
+            .col-3{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 2rem;
+                width: 80%;
+                max-width: 500px;
+                min-width: 172px;
+
+                .fa-bag-shopping{
+                    position: absolute;
+                    top: 2.3rem;
+                    font-size: 24px;
+                    color: white;
+                    left: 20%;
+                }
+
+                button{
+                    position: absolute;
+                    bottom: 10vh;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                }
+
+                .search-bar{
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1.4px solid white;
+                    padding-bottom: .3em;
+                    margin-bottom: 1em;
+                    gap: 0;
+                    justify-content: space-between;
+
+                    svg *{
+                        fill: white;
+                    }
+
+                    input{
+                        width: max-content;
+                        background: none;
+                        font-size: 70%;
+
+                        &:focus::placeholder{
+                            color: rgba(255, 255, 255, 0.274);
+                        }
+                        &::placeholder{
+                            color: white;
+                        }  
+                    }   
+                }
+            }
+
+            ul{
+                align-self: flex-start;
+                flex-direction: column;
+                gap: 2rem;
+                transform: translateY(70px);
+                opacity: 0;
+                transition: opacity 400ms ease-out 400ms, transform 400ms ease-out 300ms;
+                
+                *{
+                    color: white;
+                }
+                
+            }
+        }
+    }
+
 }

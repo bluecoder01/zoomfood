@@ -2,6 +2,7 @@ import React from 'react'
 import SectionContainer from '../sectioncontainer/SectionContainer'
 import data from "../../db/db.json"
 import ProductCard from '../productcard/ProductCard';
+import "./index.scss"
 
 function PopularSection() {
 
@@ -13,8 +14,7 @@ function PopularSection() {
 
   return (
     <div className='section popular'>
-        <SectionContainer title={"Popular Orders"} children={children}/>
-        
+        <SectionContainer title={"Popular Orders"} children={children}/> 
     </div>
   )
 }

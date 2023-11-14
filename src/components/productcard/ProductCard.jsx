@@ -14,8 +14,8 @@ function ProductCard({ image, foodName, source, price, deliveryTime }) {
         <h5 className="food-name">{foodName}</h5>
         <p className="source">{source}</p>
         <div className="extra-details">
-          <p className="price"><FontAwesomeIcon icon={faTag} /> ${Object.values(price)[0]}</p>
-          <p className="prep-time"><FontAwesomeIcon icon={faClock} /> {deliveryTime} Mins</p>
+          <p className="price"><FontAwesomeIcon icon={faTag} /> &#8358;{Object.values(price)[0]}</p>
+          <p className="prep-time"><FontAwesomeIcon icon={faClock} /> {deliveryTime} </p>
         </div>
       </div>
     </Link>
