@@ -1,0 +1,73 @@
+@import "../../scss/global.scss";
+
+.nearby-restaurants{
+    display: none;
+}
+
+.section.popular{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+    flex-direction: column;
+    padding-inline: 15%;
+    gap: 1.5rem;
+    width: 50%;
+
+    .section-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3,450px);
+        width: max-content;
+        gap: 2rem;
+    }
+
+    h4.title{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+
+
+    .product-card{
+        background: $clr-neutral-300;
+        width: max-content;
+        height: 450px;
+        border-radius: 20px;
+
+
+        div.img{
+            width: 300px;
+            object-fit: cover;
+            height: 300px;
+            overflow: hidden;
+            border-radius: 20px 20px 0 0;
+            margin-bottom: 1rem;
+            img{
+                width: 120%;
+                aspect-ratio: 1/1;
+                object-fit: cover;
+            }
+        }
+
+        h5.food-name, p.source, .extra-details{
+            margin: 1rem 1.5rem;
+        }
+        h5.food-name{
+            font-size: 1.2rem;
+        }
+
+        p.source{
+            padding: .5rem 1rem;
+            width: max-content;
+            background: $clr-primary-100;
+            border-radius: 15px;
+            color: white;
+        }
+
+        .extra-details{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+
+}

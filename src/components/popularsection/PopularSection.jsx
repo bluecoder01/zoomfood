@@ -5,7 +5,7 @@ import ProductCard from '../productcard/ProductCard';
 
 function PopularSection() {
 
-    const cards = data.foods;
+    const cards = data.foods.slice(0,6);
 
     const children = cards.map((card, index) =>{
         return <ProductCard key={index} {...card}/>
