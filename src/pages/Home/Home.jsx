@@ -1,20 +1,18 @@
-import React from 'react'
-import Hero from '../../components/heroslider/Hero'
-import Nearbyrestaurants from '../../components/nearbyrestaurants/Nearbyrestaurants'
-import PopularSection from '../../components/popularsection/PopularSection'
-import CategoriesPreview from '../../components/categoriespreview/CategoriesPreview'
+import React from "react";
+import Hero from "../../components/heroslider/Hero";
+import Nearbyrestaurants from "../../components/nearbyrestaurants/Nearbyrestaurants";
+import PopularSection from "../../components/popularsection/PopularSection";
+import CategoriesPreview from "../../components/categoriespreview/CategoriesPreview";
 
 function Home() {
   return (
-    <div className='home'>
+    <div className="home">
       <Hero />
-      <main>
-        <Nearbyrestaurants />
-        <PopularSection />
-      </main>
+      <PopularSection />
       <CategoriesPreview />
+      <Nearbyrestaurants />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

@@ -1,38 +1,33 @@
-.nearby-restaurants {
-    display: none;
-  }
-  
-  .section.popular {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 5%;
-    align-items: center;
-  
-    .section-container {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: repeat(2, 400px);
-      gap: 2rem;
+.section.popular {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 5%;
+  align-items: center;
 
-    }
-  
-    h4.title {
-      font-size: 1.4rem;
-      font-weight: 600;
-    }
+  .section-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 400px);
+    gap: 2rem;
+  }
+
+  h4.title {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
 }
 
 @media only screen and (min-width: 700px) and (max-width: 900px) {
-    .section.popular .section-container {
-        grid-template-rows: 1fr 1fr;
-    }
+  .section.popular .section-container {
+    grid-template-rows: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 700px) {
-    .section.popular .section-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-    }
+  .section.popular .section-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
 }

@@ -1,0 +1,108 @@
+@import "../../scss/global";
+
+.section.nearby-restaurants {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 5%;
+  align-items: center;
+
+  .section-container {
+    width: 80%;
+    max-width: 1200px;
+
+    h4.title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        margin-bottom: 3.5%;
+      }
+    .restaurants {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, 1fr);
+      gap: 2rem;
+
+      .restaurant-card{
+        width: 100%;
+        height: max-content;
+        position: relative;
+        overflow: hidden;
+
+        div.restaurant-img{
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform ease-out 800ms;
+            }
+        }
+        div.restaurant-details{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: #00000071;
+
+            h3{
+               font-weight: 900;
+               font-size: 2.5vw; 
+            }
+
+            h5{
+                position: absolute;
+                top: 10%;
+                right: 6%;
+                background: $clr-primary-100;
+                padding: 3% 4%;
+                font-size: min(1.2vw, 22px);
+                border-radius: 10px;
+            }
+        }
+
+        &:hover{
+            div.restaurant-img img{
+                transform: scale(1.4);
+            }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:700px) {
+    .section.nearby-restaurants .section-container .restaurants{
+        grid-template-columns: 1fr 1fr;
+
+        @media only screen and (max-width:700px){
+            grid-template-columns: 1fr;
+
+            .restaurant-card{
+                height: 150px;
+            }
+
+            div.restaurant-details{
+                h5{
+                    font-size: 10px !important;
+                    padding: .5em .8em !important;
+                }
+            }
+        }
+
+        .restaurant-card{
+
+            div.restaurant-details{
+                h3{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
