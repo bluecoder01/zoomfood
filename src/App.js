@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <AppContext>
-        <BrowserRouter>
+        <BrowserRouter basename="/zoom">
           <Layout />
         </BrowserRouter>
       </AppContext>
