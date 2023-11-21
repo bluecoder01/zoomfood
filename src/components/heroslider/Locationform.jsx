@@ -1,23 +1,39 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import data from "../../db/db.json";
+import { DeliveryLocation } from "../../contexts";
+import { useNavigate } from "react-router-dom";
 
 function Locationform() {
   // eslint-disable-next-line
   const [locations, setLocations] = useState(data.locations);
+  const navigate = useNavigate()
 
   const locationEl = locations.map((location, index) => {
     return <option key={index} value={location.locationName}>{location.locationName}</option>;
   });
 
+  const { setDeliveryLocation } = useContext(DeliveryLocation);
+  const [currentLocation, setCurrentLocation] = useState('Enter your delivery address'); 
+
+  function setLocation(){
+    setDeliveryLocation(currentLocation)
+    if(currentLocation !== 'Enter your delivery address' && currentLocation !== '') {
+      navigate("/vendors")
+    }
+    else{
+      return
+    }
+  }
+
   return (
     <form className="location-form">
-      <select defaultValue={"Enter your delivery address"} >
+      <select value={currentLocation} onChange={(e) =>{setCurrentLocation(e.target.value)}}>
         <option value={"Enter your delivery address"} hidden disabled>Enter your delivery address</option>
         {locationEl}
       </select>
       <button
         type="submit"
-        onClick={(e) => {e.preventDefault();}}
+        onClick={(e) => {e.preventDefault(); setLocation()}}
       >Get Started</button>
     </form>
   );

@@ -17,7 +17,7 @@ function CategoriesPreview() {
 
   return (
     <div to="/" className='section catgeories-preview'>
-        <SectionContainer title={"What are your taste-buds saying?"}  children={categoriesEl}/>
+        <SectionContainer title={"What are your taste-buds craving?"}  children={categoriesEl}/>
     </div>
   )
 }

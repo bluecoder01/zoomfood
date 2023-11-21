@@ -4,9 +4,9 @@ import { faClock, faTag } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
-function ProductCard({ image, foodName, source, price, deliveryTime }) {
+function ProductCard({id, image, foodName, source, price, deliveryTime }) {
   return (
-    <Link to="/" className="product-card">
+    <Link to={"/products/" + id} className="product-card">
       <div className="card-wrapper">
         <div className="img">
           <img src={image} alt="" />

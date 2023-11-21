@@ -52,6 +52,7 @@ img{
     max-width: 100%;
 }
 
+
 @import "https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap";
 @import "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Poppins:wght@300;500&display=swap";
 
@@ -69,11 +70,17 @@ input{
 h1, h3, h2, h4, h5, h6{
 	font-family: Poppins;
 }
+
+html{
+	width: 100vw;
+	all: inherit;
+}
+
 body{
 	font-family: Inter;
 	width: 100%;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden auto;
+	position: relative;
 }
 
 .clr-orange{

@@ -1,13 +1,15 @@
-import { BrowserRouter } from 'react-router-dom';
-import Layout from './layout/Layout';
-
+import { BrowserRouter } from "react-router-dom";
+import Layout from "./layout/Layout";
+import AppContext from "./contexts";
 
 function App() {
   return (
     <>
-    <BrowserRouter >
-      <Layout />
-    </BrowserRouter>
+      <AppContext>
+        <BrowserRouter>
+          <Layout />
+        </BrowserRouter>
+      </AppContext>
     </>
   );
 }

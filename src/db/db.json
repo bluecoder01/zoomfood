@@ -12,7 +12,8 @@
       "source": "Dominos",
       "deliveryTime": "20 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "small": 0, "medium": 1, "large": 2 }
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 1
     },
     {
       "foodName": "Stir fry Spag",
@@ -25,10 +26,11 @@
       "source": "Spag City",
       "deliveryTime": "35 mins",
       "image": "https://guardian.ng/wp-content/uploads/2022/10/Stirfry-spaghetti.jpeg",
-      "options": { "chicken": 0, "turkey": 1 }
+      "options": { "chicken": 0, "turkey": 1 },
+      "restaurantId": 1
     },
     {
-      "foodName": "item 7 rice",
+      "foodName": "Party Jollof rice",
       "id": 2,
       "hasOptions": true,
       "price": {
@@ -38,12 +40,13 @@
       },
       "source": "Item7",
       "deliveryTime": "20 mins",
-      "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "beef": 0, "extraRice": 1, "chicken": 2 }
+      "image": "https://pbs.twimg.com/media/Fy-LqdSWcAI4-hH?format=jpg&name=large",
+      "options": { "beef": 0, "extraRice": 1, "chicken": 2 },
+      "restaurantId": 0
     },
     {
       "foodName": "Chicken Shawarma",
-      "id": 0,
+      "id": 3,
       "hasOptions": true,
       "price": {
         "small": 1200,
@@ -52,23 +55,53 @@
       "source": "Rita's Treats",
       "deliveryTime": "20 mins",
       "image": "https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg",
-      "options": { "small": 0, "jumbo": 1 }
+      "options": { "small": 0, "jumbo": 1 },
+      "restaurantId": 2
     },
     {
       "foodName": "Juicy Meatpie",
-      "id": 0,
+      "id": 4,
       "hasOptions": true,
       "price": {
         "small": 250
       },
       "source": "Nutri C",
       "deliveryTime": "20 mins",
+      "image": "https://i.pinimg.com/736x/fe/48/1f/fe481fcb50d8d971d732487640e5c7dd.jpg",
+      "options": { "small": 0 },
+      "restaurantId": 0
+    },
+    {
+      "foodName": "Chicken Shawarma",
+      "id": 5,
+      "hasOptions": true,
+      "price": {
+        "small": 1200,
+        "medium": 1500,
+        "large": 1700
+      },
+      "source": "Item7",
+      "deliveryTime": "25 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "small": 0 }
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 1
+    },
+    {
+      "foodName": "Hamburger",
+      "id": 6,
+      "hasOptions": false,
+      "price": {
+        "single": 1200
+      },
+      "source": "Dominos",
+      "deliveryTime": "20 mins",
+      "image": "https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/1:1/w_1600,c_limit/the-ultimate-hamburger.jpg",
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 1
     },
     {
       "foodName": "Chicken Suya Pizza",
-      "id": 0,
+      "id": 7,
       "hasOptions": true,
       "price": {
         "small": 1200,
@@ -78,35 +111,8 @@
       "source": "Dominos",
       "deliveryTime": "20 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "small": 0, "medium": 1, "large": 2 }
-    },
-    {
-      "foodName": "Chicken Suya Pizza",
-      "id": 0,
-      "hasOptions": true,
-      "price": {
-        "small": 1200,
-        "medium": 4000,
-        "large": 8000
-      },
-      "source": "Dominos",
-      "deliveryTime": "20 mins",
-      "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "small": 0, "medium": 1, "large": 2 }
-    },
-    {
-      "foodName": "Chicken Suya Pizza",
-      "id": 0,
-      "hasOptions": true,
-      "price": {
-        "small": 1200,
-        "medium": 4000,
-        "large": 8000
-      },
-      "source": "Dominos",
-      "deliveryTime": "20 mins",
-      "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
-      "options": { "small": 0, "medium": 1, "large": 2 }
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 1
     }
   ],
 
@@ -133,12 +139,12 @@
   ],
 
   "restaurants":[
-    {"restaurantName": "Item 7 go", "isTrending": true, "img":"https://pbs.twimg.com/media/FXcbqW5XgAAGitd.jpg"},
-    {"restaurantName": "Dominos", "isTrending": true, "img":"https://lh3.googleusercontent.com/p/AF1QipMfo-5ubSwd80WswisFpiX_wDx3tDCeFCBYLT2X=s680-w680-h510"},
-    {"restaurantName": "Rita's Treats", "isTrending": false, "img":"https://lirp.cdn-website.com/62d17296/dms3rep/multi/opt/ice_cream_truck-100a9521-640w.jpg"},
-    {"restaurantName": "Buka", "isTrending": true, "img":"https://arbiterz.com/wp-content/uploads/2018/09/food.jpg"},
-    {"restaurantName": "Timmies Shawarma", "isTrending": false, "img":"https://scontent.cdninstagram.com/v/t51.2885-15/310711624_1273757770064925_587185048541476132_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDE0NDAuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=109&_nc_ohc=DuBqNUO-VxgAX_X8ulR&edm=APs17CUBAAAA&ccb=7-5&ig_cache_key=Mjk0NDYxOTU4OTg4MTc5OTIxNA%3D%3D.2-ccb7-5&oh=00_AfB0qzxoIY72pbQ5HmEmL-FuuCp1Pn-l09iJwAjeXehWSg&oe=65579126&_nc_sid=10d13b"},
-    {"restaurantName": "Grub Town", "isTrending": false, "img":"https://lh3.googleusercontent.com/p/AF1QipNDGy7V-PGtt_LtJYVkE314KyZUDukrPxvUTL5s=s680-w680-h510"},
-    {"restaurantName": "Ushies", "isTrending": false, "img":"https://scontent.flos5-3.fna.fbcdn.net/v/t1.6435-9/174685558_4280900808596047_1657268825188190668_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c2f564&_nc_ohc=ACwXmiKLhMUAX-nTrPc&_nc_ht=scontent.flos5-3.fna&oh=00_AfBmbc01yYAfE4bvkR0Tg1B9ASzYxlItIX7tD8GRKU2dEg&oe=657BFC7C"}
+    {"restaurantId": 0, "restaurantName": "Item 7 go", "aveRating": 4.0, "aveDeliveryTime": 20, "isTrending": true, "img":"https://pbs.twimg.com/media/FXcbqW5XgAAGitd.jpg"},
+    {"restaurantId": 1, "restaurantName": "Dominos", "aveRating": 4.5, "aveDeliveryTime": 33, "isTrending": true, "img":"https://lh5.googleusercontent.com/p/AF1QipMfo-5ubSwd80WswisFpiX_wDx3tDCeFCBYLT2X=w500-h500-k-no"},
+    {"restaurantId": 2, "restaurantName": "Rita's Treats", "aveRating": 4.0, "aveDeliveryTime": 30, "isTrending": false, "img":"https://lirp.cdn-website.com/62d17296/dms3rep/multi/opt/ice_cream_truck-100a9521-640w.jpg"},
+    {"restaurantId": 3, "restaurantName": "Buka", "aveRating": 4.5, "aveDeliveryTime": 15, "isTrending": true, "img":"https://arbiterz.com/wp-content/uploads/2018/09/food.jpg"},
+    {"restaurantId": 4, "restaurantName": "Bookie's Noshup", "aveRating": 3.5, "aveDeliveryTime": 23, "isTrending": false, "img":"https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium"},
+    {"restaurantId": 5, "restaurantName": "Grub Town", "aveRating": 4.0, "aveDeliveryTime": 18, "isTrending": false, "img":"https://lh5.googleusercontent.com/p/AF1QipPaDn-xNT3KWWF1r8QECw3MLj80KX0TvxKFTFn1=w1080-k-no"},
+    {"restaurantId": 6, "restaurantName": "Ushies", "aveRating": 3.5, "aveDeliveryTime": 22, "isTrending": false, "img":"https://scontent.flos5-3.fna.fbcdn.net/v/t1.6435-9/174685558_4280900808596047_1657268825188190668_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c2f564&_nc_ohc=ACwXmiKLhMUAX-nTrPc&_nc_ht=scontent.flos5-3.fna&oh=00_AfBmbc01yYAfE4bvkR0Tg1B9ASzYxlItIX7tD8GRKU2dEg&oe=657BFC7C"}
   ]
 }
