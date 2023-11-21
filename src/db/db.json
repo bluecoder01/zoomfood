@@ -13,7 +13,8 @@
       "deliveryTime": "20 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 1
+      "restaurantId": 1,
+      "tags": ["pizza", "suya", "chicken", "fast food"]
     },
     {
       "foodName": "Stir fry Spag",
@@ -27,7 +28,8 @@
       "deliveryTime": "35 mins",
       "image": "https://guardian.ng/wp-content/uploads/2022/10/Stirfry-spaghetti.jpeg",
       "options": { "chicken": 0, "turkey": 1 },
-      "restaurantId": 1
+      "restaurantId": 1,
+      "tags": ["spaghetti", "stir fry", "chicken", "turkey"]
     },
     {
       "foodName": "Party Jollof rice",
@@ -42,7 +44,8 @@
       "deliveryTime": "20 mins",
       "image": "https://pbs.twimg.com/media/Fy-LqdSWcAI4-hH?format=jpg&name=large",
       "options": { "beef": 0, "extraRice": 1, "chicken": 2 },
-      "restaurantId": 0
+      "restaurantId": 0,
+      "tags": ["jollof rice", "party food"]
     },
     {
       "foodName": "Chicken Shawarma",
@@ -56,7 +59,8 @@
       "deliveryTime": "20 mins",
       "image": "https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg",
       "options": { "small": 0, "jumbo": 1 },
-      "restaurantId": 2
+      "restaurantId": 2,
+      "tags": ["shawarma", "chicken"]
     },
     {
       "foodName": "Juicy Meatpie",
@@ -69,7 +73,8 @@
       "deliveryTime": "20 mins",
       "image": "https://i.pinimg.com/736x/fe/48/1f/fe481fcb50d8d971d732487640e5c7dd.jpg",
       "options": { "small": 0 },
-      "restaurantId": 0
+      "restaurantId": 0,
+      "tags": ["meatpie"]
     },
     {
       "foodName": "Chicken Shawarma",
@@ -84,7 +89,8 @@
       "deliveryTime": "25 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 1
+      "restaurantId": 1,
+      "tags": ["shawarma", "chicken"]
     },
     {
       "foodName": "Hamburger",
@@ -97,7 +103,8 @@
       "deliveryTime": "20 mins",
       "image": "https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/1:1/w_1600,c_limit/the-ultimate-hamburger.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 1
+      "restaurantId": 1,
+      "tags": ["hamburger"]
     },
     {
       "foodName": "Chicken Suya Pizza",
@@ -112,7 +119,8 @@
       "deliveryTime": "20 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 1
+      "restaurantId": 1,
+      "tags": ["pizza", "suya", "chicken", "fast food"]
     },
     {
       "foodName": "Mixed Rice",
@@ -127,7 +135,8 @@
       "deliveryTime": "20 mins",
       "image": "https://pbs.twimg.com/media/Fy-LqdSWcAI4-hH?format=jpg&name=large",
       "options": { "Beef": 0, "Chicken": 1, "Fish": 2 },
-      "restaurantId": 0
+      "restaurantId": 0,
+      "tags": ["mixed rice", "beef", "chicken", "fish"]
     },
     {
       "foodName": "Fufu and Egusi",
@@ -140,7 +149,8 @@
       "deliveryTime": "30 mins",
       "image": "https://www.tastingtable.com/img/gallery/egusi-is-the-hearty-nigerian-soup-you-should-know/l-intro-1667997223.jpg",
       "options": {"normal":0},
-      "restaurantId": 3
+      "restaurantId": 3,
+      "tags": ["fufu", "egusi"]
     },
     {
       "foodName": "Suya Burger",
@@ -155,7 +165,8 @@
       "deliveryTime": "15 mins",
       "image": "https://www.myactivekitchen.com/wp-content/uploads/2015/03/suya-burger.600x900-8.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 5
+      "restaurantId": 5,
+      "tags": ["suya", "burger"]
     },
     {
       "foodName": "Akara and Pap",
@@ -168,7 +179,8 @@
       "deliveryTime": "10 mins",
       "image": "https://lagos.echoesofcalabar.com/wp-content/uploads/2020/06/pap-and-akara.jpeg",
       "options": {"single": 0},
-      "restaurantId": 3
+      "restaurantId": 3,
+      "tags": ["akara", "pap"]
     }
   ],
 
