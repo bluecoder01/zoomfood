@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { DeliveryLocation } from "../../contexts/index";
 import Locationform from "../../components/heroslider/Locationform";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLocationDot, faMapLocation } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function LocationBox() {
   const { deliveryLocation, setDeliveryLocation } =

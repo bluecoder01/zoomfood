@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home/Home'
 import "../scss/global.scss"
+import "../scss/button.scss"
 import Navigation from '../components/Navigation/Navigation'
 import Vendors from '../pages/Vendors/Vendors'
 import Product from '../pages/Product/Product'

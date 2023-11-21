@@ -45,6 +45,54 @@
     > *{
         z-index: 2;
     }
+
+    /* Add this CSS to your stylesheet or in your HTML file's style tag */
+
+.location-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+label {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Visually hide the label but keep it accessible for screen readers */
+// .visually-hidden {
+//   position: absolute;
+//   width: 1px;
+//   height: 1px;
+//   margin: -1px;
+//   padding: 0;
+//   overflow: hidden;
+//   clip: rect(0, 0, 0, 0);
+//   border: 0;
+// }
+
+/* Optional: Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  label {
+    font-size: 14px;
+  }
+
+  select {
+    font-size: 12px;
+  }
+}
+
 }
 
 .vendor-card {
