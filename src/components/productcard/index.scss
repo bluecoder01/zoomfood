@@ -28,7 +28,7 @@
     }
 
     h5.food-name,
-    p.source,
+    a.source,
     .extra-details {
       margin: 0.8rem 1.2rem;
       > * {
@@ -39,7 +39,7 @@
       font-size: 1.2rem;
     }
 
-    p.source {
+    a.source {
       padding: 0.5rem 1rem;
       width: max-content;
       background: $clr-primary-100;
@@ -94,7 +94,7 @@
       }
 
       h5.food-name,
-      p.source,
+      a.source,
       .extra-details {
         margin: .5rem 1rem;
       }

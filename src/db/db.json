@@ -1,7 +1,7 @@
 {
   "foods": [
     {
-      "foodName": "Chicken Suya Pizza",
+      "foodName": "Chicken Combo Pizza",
       "id": 0,
       "hasOptions": true,
       "price": {
@@ -24,7 +24,7 @@
         "chicken": 1500,
         "turkey": 2000
       },
-      "source": "Spag City",
+      "source": "Dominos",
       "deliveryTime": "35 mins",
       "image": "https://guardian.ng/wp-content/uploads/2022/10/Stirfry-spaghetti.jpeg",
       "options": { "chicken": 0, "turkey": 1 },
@@ -73,7 +73,7 @@
       "deliveryTime": "20 mins",
       "image": "https://i.pinimg.com/736x/fe/48/1f/fe481fcb50d8d971d732487640e5c7dd.jpg",
       "options": { "small": 0 },
-      "restaurantId": 0,
+      "restaurantId": 8,
       "tags": ["meatpie"]
     },
     {
@@ -89,7 +89,23 @@
       "deliveryTime": "25 mins",
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 1,
+      "restaurantId": 0,
+      "tags": ["shawarma", "chicken"]
+    },
+    {
+      "foodName": "Chicken Shawarma",
+      "id": 12,
+      "hasOptions": true,
+      "price": {
+        "single": 1200,
+        "double": 1500,
+        "jumbo": 1700
+      },
+      "source": "Bookie's Noshup",
+      "deliveryTime": "25 mins",
+      "image": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium",
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 4,
       "tags": ["shawarma", "chicken"]
     },
     {
@@ -107,7 +123,7 @@
       "tags": ["hamburger"]
     },
     {
-      "foodName": "Chicken Suya Pizza",
+      "foodName": "Beef Suya Pizza",
       "id": 7,
       "hasOptions": true,
       "price": {
@@ -214,6 +230,7 @@
     {"restaurantId": 4, "restaurantName": "Bookie's Noshup", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 3.5, "aveDeliveryTime": 23, "isTrending": false, "img":"https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium"},
     {"restaurantId": 5, "restaurantName": "Grub Town", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.0, "aveDeliveryTime": 18, "isTrending": false, "img":"https://lh5.googleusercontent.com/p/AF1QipPaDn-xNT3KWWF1r8QECw3MLj80KX0TvxKFTFn1=w1080-k-no"},
     {"restaurantId": 6, "restaurantName": "Ushies", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 3.5, "aveDeliveryTime": 22, "isTrending": false, "img":"https://scontent.flos5-3.fna.fbcdn.net/v/t1.6435-9/174685558_4280900808596047_1657268825188190668_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c2f564&_nc_ohc=ACwXmiKLhMUAX-nTrPc&_nc_ht=scontent.flos5-3.fna&oh=00_AfBmbc01yYAfE4bvkR0Tg1B9ASzYxlItIX7tD8GRKU2dEg&oe=657BFC7C"},
-    {"restaurantId": 7, "restaurantName": "The Bakery", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 15, "isTrending": true, "img":"https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"}
+    {"restaurantId": 7, "restaurantName": "The Bakery", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 15, "isTrending": true, "img":"https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"},
+    {"restaurantId": 8, "restaurantName": "Nutri C", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 13, "isTrending": false, "img":"https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"}
   ]
 }
