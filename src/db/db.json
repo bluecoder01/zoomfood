@@ -93,22 +93,6 @@
       "tags": ["shawarma", "chicken"]
     },
     {
-      "foodName": "Chicken Shawarma",
-      "id": 12,
-      "hasOptions": true,
-      "price": {
-        "single": 1200,
-        "double": 1500,
-        "jumbo": 1700
-      },
-      "source": "Bookie's Noshup",
-      "deliveryTime": "25 mins",
-      "image": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium",
-      "options": { "small": 0, "medium": 1, "large": 2 },
-      "restaurantId": 4,
-      "tags": ["shawarma", "chicken"]
-    },
-    {
       "foodName": "Hamburger",
       "id": 6,
       "hasOptions": false,
@@ -197,6 +181,22 @@
       "options": {"single": 0},
       "restaurantId": 3,
       "tags": ["akara", "pap"]
+    },
+    {
+      "foodName": "Chicken Shawarma",
+      "id": 12,
+      "hasOptions": true,
+      "price": {
+        "single": 1200,
+        "double": 1500,
+        "jumbo": 1700
+      },
+      "source": "Bookie's Noshup",
+      "deliveryTime": "25 mins",
+      "image": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium",
+      "options": { "small": 0, "medium": 1, "large": 2 },
+      "restaurantId": 4,
+      "tags": ["shawarma", "chicken"]
     }
   ],
 
