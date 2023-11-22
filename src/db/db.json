@@ -194,7 +194,7 @@
       "source": "Bookie's Noshup",
       "deliveryTime": "25 mins",
       "image": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium",
-      "options": { "small": 0, "medium": 1, "large": 2 },
+      "options": { "single": 0, "double": 1, "jumbo": 2 },
       "restaurantId": 4,
       "tags": ["shawarma", "chicken"]
     }
