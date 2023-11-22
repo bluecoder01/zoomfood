@@ -1,0 +1,213 @@
+
+    $main-color: #FC8019;
+$secondary-color: #fff;
+
+.restaurant-page {
+  padding: 20px;
+  min-height: 100vh;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  .restaurant-info {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 7%;
+
+    .trending-label {
+      background-color: #FC8019;
+      color: #fff;
+      font-size: 1rem;
+      font-family: Poppins;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-top: 10px;
+      display: inline-block;
+      position: absolute;
+      right: 2rem;
+      top: 1rem;
+      z-index: 101;
+    }
+  
+    .background {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+  
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.842) 20%, rgba(0, 0, 0, 0) );
+        z-index: 100;
+      }
+    }
+  
+    .info {
+      padding: 3rem;
+      position: absolute;
+      flex: 1;
+      z-index: 101; /* Ensure details are above the backdrop */
+  
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+        color: white;
+        background-color: #FC8019;
+        width: max-content;
+        border-radius: 10px;
+        padding: .7rem 1rem;
+      }
+  
+      .description {
+        font-size: .9rem;
+        max-width: 600px;
+        color: #fff;
+        margin-bottom: 1rem;
+        font-family: Poppins;
+        line-height: 1.2;
+      }
+  
+      .ratings {
+        display: flex;
+        color: #fff;
+        text-transform: capitalize;
+        p {
+          font-size: .8rem;
+          margin-right: 20px;
+        }
+        svg{
+          margin-right: .4rem;
+        }
+      }
+  
+      @media screen and (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+    
+        .description {
+          font-size: .7rem;
+        }
+    
+        .ratings {
+          p {
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .trending-label{
+        font-size: .7rem;
+      }
+
+      .info{
+        padding: 1.5rem;
+      }
+    }
+  }
+  
+  
+
+  .menu-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+
+      .product-card-2 {
+        text-decoration: none;
+        box-shadow: -20px 15px 20px -20px rgba(0, 0, 0, 0.168627451);
+        color: inherit;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+        .card-wrapper {
+          border-radius: 12px 12px 0 0;
+          overflow: hidden;
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease-in-out;
+          margin: 0 auto;
+          width: 100%;
+          
+
+          &:hover {
+            transform: scale(1.05);
+          }
+      
+          .img {
+            img {
+              width: 100%;
+              height: 150px;
+              object-fit: cover;
+              border-radius: 12px 12px 0 0;
+            }
+          }
+      
+          .food-name {
+            font-size: 1.2rem;
+            margin: 10px;
+          }
+      
+          .source {
+            display: none;
+          }
+      
+          .extra-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #FC8019;  // Use the provided color
+            color: #fff;  // White text color for contrast
+      
+            .price,
+            .prep-time {
+              display: flex;
+              align-items: center;
+              font-size: .8rem;
+      
+              svg {
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      
+    }
+  }
+}

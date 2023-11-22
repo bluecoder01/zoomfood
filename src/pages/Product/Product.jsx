@@ -32,7 +32,7 @@ function Product() {
           <form className="options">
             {Object.keys(product.options).map((option, i) => {
               return (
-                <div className="options-toggle">
+                <div className="options-toggle" key={i}>
                   <label>
                     {i === 0 ? (
                       <input

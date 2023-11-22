@@ -10,8 +10,8 @@ function Home() {
     <div className="home">
       <Hero />
       <PopularSection />
-      <CategoriesPreview />
       <Nearbyrestaurants />
+      <CategoriesPreview />
       <VendorCTA />
     </div>
   );

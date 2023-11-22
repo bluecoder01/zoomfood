@@ -7,10 +7,10 @@ function Search() {
 
     const {query} = useParams();
 
-    const results = data.foods.filter(food => {
-        return food.foodName.toLowerCase().includes(query.toLowerCase()) && food.tags.indexOf(query.toLowerCase() !== -1) ;
-    })
-    // console.log(results);
+        const results = data.foods.filter((item) =>
+          item.foodName.toLowerCase().includes(query) ||
+          item.tags.some((tag) => tag.toLowerCase().includes(query))
+        );
 
   return (
     <div className='search-results'>

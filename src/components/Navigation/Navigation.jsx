@@ -38,7 +38,7 @@ function Navigation() {
         </ul>
 
         <div className="col-3">
-          <form className="search-bar" value={query} onChange={(e)=>{ e.preventDefault(); setQuery(e.target.value)}} onSubmit={() =>{ handleSearch() }}>
+          <form className="search-bar" value={query} onChange={(e)=>{ setQuery(e.target.value)}} onSubmit={(e) =>{ e.preventDefault(); handleSearch() }}>
             <input type="search" placeholder="What are you looking for?" />
             <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
           </form>
