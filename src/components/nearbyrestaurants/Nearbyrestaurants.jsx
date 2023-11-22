@@ -15,7 +15,7 @@ function Nearbyrestaurants() {
         <div className="restaurants">
           {restaurantobjs.map((restaurant, i) => {
             return (
-              <Link to="/"  key={i} className="restaurant-card">
+              <Link to={"/vendors/" + restaurant.restaurantId}  key={i} className="restaurant-card">
                 <div className="restaurant-wrapper">
                   <div className="restaurant-img">
                     <img src={restaurant.img} alt={restaurant.restaurantName} />
