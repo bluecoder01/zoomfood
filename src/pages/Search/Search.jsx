@@ -8,7 +8,7 @@ function Search() {
     const {query} = useParams();
 
         const results = data.foods.filter((item) =>
-          item.foodName.toLowerCase().includes(query) ||
+          item.foodName.toLowerCase().includes(query.toLowerCase()) ||
           item.tags.some((tag) => tag.toLowerCase().includes(query))
         );
 
