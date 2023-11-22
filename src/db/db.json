@@ -102,7 +102,7 @@
       "source": "Dominos",
       "deliveryTime": "20 mins",
       "image": "https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/1:1/w_1600,c_limit/the-ultimate-hamburger.jpg",
-      "options": { "small": 0, "medium": 1, "large": 2 },
+      "options": { "single": 0 },
       "restaurantId": 1,
       "tags": ["hamburger"]
     },
