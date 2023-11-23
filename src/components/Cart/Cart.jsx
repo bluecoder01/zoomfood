@@ -19,7 +19,7 @@ const Cart = ({ onRemove, onQuantityChange, onClose }) => {
       <div className="cart">
         <h2>Shopping Cart</h2>
         {items.length === 0 ? (
-          <p>Your cart is empty</p>
+          <p>Your cart is empty :|</p>
         ) : (
           <div>
             {items.map((item) =>{ 
