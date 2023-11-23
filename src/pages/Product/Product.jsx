@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import data from "../../db/db.json";
 import { useParams } from "react-router-dom";
 import "./index.scss"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faMoneyBill } from "@fortawesome/free-solid-svg-icons";
 import { faClock } from "@fortawesome/free-regular-svg-icons";
+import CartContext from "../../contexts/CartContext";
 
 function Product() {
     const { id } = useParams()
@@ -16,6 +17,13 @@ function Product() {
   const optionChange = (e) => {
     setSelectedOption(e.target.value);
   };
+
+  const {items, addToCart} = useContext(CartContext);
+
+  const addItem = () =>{
+    addToCart(product.id, selectedOption, 1, product.price[selectedOption]);
+    console.log(items)
+  }
 
   return (
     <div className="product-preview">
@@ -62,7 +70,7 @@ function Product() {
             <p className="delivery-time"> <FontAwesomeIcon icon={faClock}></FontAwesomeIcon>{product.deliveryTime}</p>
             <p className="price">&#8358;{product.price[selectedOption]}</p>
           </div>
-          <button> <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> Add to Cart</button>
+          <button  onClick={addItem}> <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> Add to Cart</button>
           <button><FontAwesomeIcon icon={faMoneyBill}></FontAwesomeIcon> Buy Now</button>
         </div>
         <img src={product.image} alt="" />

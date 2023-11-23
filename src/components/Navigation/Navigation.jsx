@@ -9,7 +9,7 @@ import "./index.scss";
 import Burger from "../burger";
 import { Link, useNavigate } from "react-router-dom";
 
-function Navigation() {
+function Navigation({ isCartVisible, toggleCart}) {
 
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
@@ -40,9 +40,9 @@ function Navigation() {
         <div className="col-3">
           <form className="search-bar" value={query} onChange={(e)=>{ setQuery(e.target.value)}} onSubmit={(e) =>{ e.preventDefault(); handleSearch() }}>
             <input type="search" placeholder="What are you looking for?" />
-            <FontAwesomeIcon icon={faMagnifyingGlass}></FontAwesomeIcon>
+            <FontAwesomeIcon  icon={faMagnifyingGlass}></FontAwesomeIcon>
           </form>
-          <FontAwesomeIcon icon={faBagShopping} />
+          <FontAwesomeIcon onClick={() => toggleCart()} icon={faBagShopping} />
           <button>Sign Up</button>
         </div>
       </nav>
