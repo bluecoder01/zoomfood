@@ -1,6 +1,7 @@
-@import "../../scss/global.scss";
+
 
   .product-card {
+    @import "../../scss/global.scss";
     text-transform: capitalize;
     background: $clr-neutral-300;
     width: max-content;

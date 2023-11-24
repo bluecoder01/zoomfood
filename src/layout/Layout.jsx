@@ -13,20 +13,6 @@ import CartContext from '../contexts/CartContext'
 
 function Layout() {
   const [isCartVisible, setIsCartVisible] = useState(false);
-  const CartItems = [
-    {"foodName": "Hamburger",
-    "id": 6,
-    "hasOptions": false,
-    "price": {
-      "single": 1200
-    },
-    "source": "Dominos",
-    "deliveryTime": "20 mins",
-    "image": "https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/1:1/w_1600,c_limit/the-ultimate-hamburger.jpg",
-    "options": { "single": 0 },
-    "restaurantId": 1,
-    "tags": ["hamburger"]}
-  ]
 
   const { items } = useContext(CartContext);
     useEffect(()=>{
@@ -41,7 +27,7 @@ function Layout() {
     <div className='container content'>
       <Navigation isCartVisible={isCartVisible} toggleCart ={toggleCart}/>
 
-      {isCartVisible && <Cart onQuantityChange={() =>{ }} cartItems={CartItems} onRemove={() =>{ }} onClose={() => setIsCartVisible(false)}/> }
+      {isCartVisible && <Cart onQuantityChange={() =>{ }} onRemove={() =>{ }} onClose={() => setIsCartVisible(false)}/> }
         <Routes>
           <Route path='/' exact element={<Home /> } />
           <Route path='/vendors' element={<Vendors /> } />
