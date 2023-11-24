@@ -27,7 +27,7 @@ function Layout() {
     <div className='container content'>
       <Navigation isCartVisible={isCartVisible} toggleCart ={toggleCart}/>
 
-      {isCartVisible && <Cart onQuantityChange={() =>{ }} onRemove={() =>{ }} onClose={() => setIsCartVisible(false)}/> }
+      {/* {isCartVisible && <Cart onQuantityChange={() =>{ }} onRemove={() =>{ }} onClose={() => setIsCartVisible(false)}/> } */}
         <Routes>
           <Route path='/' exact element={<Home /> } />
           <Route path='/vendors' element={<Vendors /> } />
