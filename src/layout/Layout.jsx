@@ -10,11 +10,12 @@ import Search from '../pages/Search/Search'
 import RestaurantPage from '../pages/VendorHome/VendorHome'
 import Cart from '../components/Cart/Cart'
 import CartContext from '../contexts/CartContext'
+import SuccessModal from '../components/Cart/SuccessModal'
 
 function Layout() {
   const [isCartVisible, setIsCartVisible] = useState(false);
 
-  const { items } = useContext(CartContext);
+  const { items, showSuccessModal } = useContext(CartContext);
     useEffect(()=>{
     console.log(items)
   })
@@ -35,6 +36,7 @@ function Layout() {
           <Route path='/search/:query' exact element={<Search /> } />
           <Route path='/vendors/:restaurantId' exact element={<RestaurantPage /> } />
         </Routes>
+      {showSuccessModal && <SuccessModal  /> }
     </div>
   )
 }

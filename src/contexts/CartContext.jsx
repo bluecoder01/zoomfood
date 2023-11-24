@@ -24,7 +24,14 @@ export function CartProvider({ children }) {
         // setTotal(total + price)
       setItems((prevState) => [...prevState, { itemId, option, quantity, price }]);
     }
+    setShowSuccessModal(true)
   };
+
+  const removeFromCart = (i)=>{
+
+      var newItems = items.slice(0,i).concat(items.slice(i+1))
+      setItems(newItems)
+  }
 
   const increaseQuantity = (itemId, option, price) => {
     setItems(prevState =>
@@ -56,17 +63,27 @@ export function CartProvider({ children }) {
     }
   };
 
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+
   useEffect(() => {
     let sum = 0;
     for( var i = 0; i < items.length; i++){
       sum += (items[i].price * items[i].quantity)
     }
     setTotal(sum)
-  },[items])
+
+    if (showSuccessModal) {
+      const timer = setTimeout(() => {
+        setShowSuccessModal(false);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  },[items, showSuccessModal])
   
 
   return (
-    <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total, setTotal }}>
+    <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total, setTotal, showSuccessModal, setShowSuccessModal, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

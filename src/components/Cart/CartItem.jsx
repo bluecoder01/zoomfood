@@ -4,16 +4,13 @@ const CartItem = ({ increaseQuantity, decreaseQuantity, item, onRemove, option, 
   const { id, foodName, price, source, image, deliveryTime } = item;  
 
 
-  const handleRemove = () => {
-    onRemove(id);
-  };
-
 
   return (
     <div className="cart-item">
       <img src={image} alt={foodName} />
       <div className="item-details">
         <h3>{foodName}</h3>
+        <p>{option}</p>
         <p>{source}</p>
         <p>Price: &#8358;{price[option]}</p>
         <p>Delivery Time: {deliveryTime}</p>
@@ -22,7 +19,7 @@ const CartItem = ({ increaseQuantity, decreaseQuantity, item, onRemove, option, 
           <span>{quantity}</span>
           <button onClick={increaseQuantity}>+</button>
         </div>
-        <button onClick={handleRemove}>Remove</button>
+        <button onClick={onRemove}>Remove</button>
       </div>
     </div>
   );

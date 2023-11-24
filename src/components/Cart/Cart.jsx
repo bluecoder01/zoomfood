@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import CartItem from './CartItem';
 
 import "./index.scss"
@@ -9,7 +9,7 @@ import data from "../../db/db.json"
 
 const Cart = ({ onRemove, onClose }) => {
 
-    const { items, increaseQuantity, decreaseQuantity, total, setTotal } = useContext(CartContext);
+    const { items, increaseQuantity, decreaseQuantity, total, removeFromCart } = useContext(CartContext);
 
     // return items.reduce((total, item) => total + data.foods[item.itemId].price[item.option] * item.quantity, 0);
 
@@ -18,17 +18,17 @@ const Cart = ({ onRemove, onClose }) => {
       <div className="cart">
         <h2>Shopping Cart</h2>
         {items.length === 0 ? (
-          <p>Your cart is empty :|</p>
+          <p>Your cart is empty</p>
         ) : (
           <div>
-            {items.map((item) =>{ 
+            {items.map((item ,i) =>{ 
                 const currentItem = data.foods[item.itemId]
             return(
               <CartItem
-                key={currentItem.id}
+                key={i}
                 item={currentItem}
                 option = {item.option}
-                onRemove={onRemove}
+                onRemove={() => removeFromCart(i)}
                 quantity ={item.quantity}
                 increaseQuantity={()=> increaseQuantity(item.itemId, item.option, item.price)}
                 decreaseQuantity={()=> decreaseQuantity(item.itemId, item.option, item.price)}
@@ -37,7 +37,7 @@ const Cart = ({ onRemove, onClose }) => {
             })}
           </div>
         )}
-        <p>Total: &#8358;{total}</p>
+        {items[0] && <p>Total: &#8358;{total}</p>}
             <button onClick={onClose}>Close Cart</button>
             <button onClick={() => checkout()}>Checkout</button>
       </div>
