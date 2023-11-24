@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartItem = ({ increaseQuantity, decreaseQuantity, item, onRemove, option, quantity}) => {
-  const { id, foodName, price, source, image, deliveryTime } = item;  
+  const { foodName, price, source, image, deliveryTime } = item;  
 
 
 

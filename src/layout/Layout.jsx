@@ -15,10 +15,7 @@ import SuccessModal from '../components/Cart/SuccessModal'
 function Layout() {
   const [isCartVisible, setIsCartVisible] = useState(false);
 
-  const { items, showSuccessModal } = useContext(CartContext);
-    useEffect(()=>{
-    console.log(items)
-  })
+  const {  showSuccessModal } = useContext(CartContext);
   
   const toggleCart = () => {
     setIsCartVisible((prevVisible) => !prevVisible);

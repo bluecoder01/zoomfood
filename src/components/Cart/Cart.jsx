@@ -38,8 +38,8 @@ const Cart = ({ onRemove, onClose }) => {
           </div>
         )}
         {items[0] && <p>Total: &#8358;{total}</p>}
-            <button onClick={onClose}>Close Cart</button>
-            <button onClick={() => checkout()}>Checkout</button>
+            <button onClick={onClose}>Close</button>
+            {items[0] && <button onClick={() => checkout()}>Checkout</button>}
       </div>
     </div>
   );
