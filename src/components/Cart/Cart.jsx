@@ -1,13 +1,13 @@
 import React, { useContext } from 'react';
 import CartItem from './CartItem';
 
-// import "./index.scss"
+import "./index.scss"
 import CartContext from '../../contexts/CartContext';
 import data from "../../db/db.json"
 
 
 
-const Cart = ({ onRemove, onQuantityChange, onClose }) => {
+const Cart = ({ onRemove, onClose }) => {
 
     const { items, increaseQuantity, decreaseQuantity, total } = useContext(CartContext);
 
