@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import CartItem from './CartItem';
 
 import "./index.scss"
@@ -9,8 +9,7 @@ import data from "../../db/db.json"
 
 const Cart = ({ onRemove, onClose }) => {
 
-    const { items, increaseQuantity, decreaseQuantity, total } = useContext(CartContext);
-
+    const { items, increaseQuantity, decreaseQuantity, total, setTotal } = useContext(CartContext);
 
     // return items.reduce((total, item) => total + data.foods[item.itemId].price[item.option] * item.quantity, 0);
 

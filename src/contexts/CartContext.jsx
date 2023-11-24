@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const CartContext = createContext();
 
@@ -21,7 +21,7 @@ export function CartProvider({ children }) {
       )
       setTotal(total + existingItem.price * existingItem.quantity);
     } else {
-        setTotal(total + price)
+        // setTotal(total + price)
       setItems((prevState) => [...prevState, { itemId, option, quantity, price }]);
     }
   };
@@ -35,7 +35,7 @@ export function CartProvider({ children }) {
       )
     );
     if(price !== 0) {
-        setTotal(total + price);
+        // setTotal(total + price);
     } else{
         return
     }
@@ -50,15 +50,23 @@ export function CartProvider({ children }) {
       )
     );
     if(total - price !== 0) {
-        setTotal(total - price);
+        // setTotal(total - price);
     } else{
         return
     }
   };
+
+  useEffect(() => {
+    let sum = 0;
+    for( var i = 0; i < items.length; i++){
+      sum += (items[i].price * items[i].quantity)
+    }
+    setTotal(sum)
+  },[items])
   
 
   return (
-    <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total }}>
+    <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total, setTotal }}>
       {children}
     </CartContext.Provider>
   );
