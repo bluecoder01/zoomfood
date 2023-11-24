@@ -73,7 +73,8 @@ h1, h3, h2, h4, h5, h6{
 
 html{
 	// width: 100vw;
-	all: inherit;
+	// all: inherit;
+	zoom: 100% !important;
 }
 
 body{
