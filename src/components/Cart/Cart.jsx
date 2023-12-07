@@ -1,17 +1,19 @@
 import React, { useContext } from 'react';
 import CartItem from './CartItem';
 
-import "./index.scss"
+import "./index.scss";
 import CartContext from '../../contexts/CartContext';
-import data from "../../db/db.json"
+import data from "../../db/db.json";
 
 
 
-const Cart = ({ onRemove, onClose }) => {
+const Cart = ({ onClose }) => {
 
     const { items, increaseQuantity, decreaseQuantity, total, removeFromCart } = useContext(CartContext);
 
     // return items.reduce((total, item) => total + data.foods[item.itemId].price[item.option] * item.quantity, 0);
+
+    // const items = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
 
   return (
     <div className="cart-overlay">

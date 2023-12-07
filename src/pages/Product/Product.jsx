@@ -18,11 +18,11 @@ function Product() {
     setSelectedOption(e.target.value);
   };
 
-  const {items, addToCart} = useContext(CartContext);
+  const { addToCart } = useContext(CartContext);
 
   const addItem = () =>{
     addToCart(product.id, selectedOption, 1, product.price[selectedOption]);
-    console.log(items)
+    // console.log(items)
   }
 
   return (
@@ -73,7 +73,7 @@ function Product() {
           <button  onClick={addItem}> <FontAwesomeIcon icon={faCartShopping}></FontAwesomeIcon> Add to Cart</button>
           <button><FontAwesomeIcon icon={faMoneyBill}></FontAwesomeIcon> Buy Now</button>
         </div>
-        <img src={product.image} alt="" />
+        <img src={product.image} alt={product.image} />
       </div>
     </div>
   );

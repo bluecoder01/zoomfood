@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import Home from '../pages/Home/Home'
 import "../scss/global.scss"
@@ -25,7 +25,7 @@ function Layout() {
     <div className='container content'>
       <Navigation isCartVisible={isCartVisible} toggleCart ={toggleCart}/>
 
-      {isCartVisible && <Cart onQuantityChange={() =>{ }} onRemove={() =>{ }} onClose={() => setIsCartVisible(false)}/> }
+      {isCartVisible && <Cart onClose={() => setIsCartVisible(false)}/> }
         <Routes>
           <Route path='/' exact element={<Home /> } />
           <Route path='/vendors' element={<Vendors /> } />

@@ -1,10 +1,13 @@
 import { createContext, useEffect, useState } from "react";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const CartContext = createContext();
 
 export function CartProvider({ children }) {
-  const [items, setItems] = useState([]);
-  const [total, setTotal] = useState(0)
+  const [items, setItems] = useLocalStorage('cartItems', []);
+  const [total, setTotal] = useLocalStorage('cartTotal', 0);
+
+
 
   const addToCart = (itemId, option, quantity, price) => {
     const existingItem = items.find(
@@ -24,7 +27,9 @@ export function CartProvider({ children }) {
         // setTotal(total + price)
       setItems((prevState) => [...prevState, { itemId, option, quantity, price }]);
     }
-    setShowSuccessModal(true)
+
+    setShowSuccessModal(true);
+
   };
 
   const removeFromCart = (i)=>{
@@ -36,36 +41,28 @@ export function CartProvider({ children }) {
   const increaseQuantity = (itemId, option, price) => {
     setItems(prevState =>
       prevState.map(item =>
-        item.itemId === itemId && item.option === option
+        item.itemId === itemId && item.option === option && item.quantity < 5
           ? { ...item, quantity: item.quantity + 1 }
           : item
-      )
-    );
-    if(price !== 0) {
-        // setTotal(total + price);
-    } else{
-        return
-    }
+      ));
   };
   
   const decreaseQuantity = (itemId, option, price) => {
-    setItems(prevState =>
+
+    setItems(prevState => 
       prevState.map(item =>
         item.itemId === itemId && item.option === option && item.quantity > 1
           ? { ...item, quantity: item.quantity - 1 }
           : item
-      )
-    );
-    if(total - price !== 0) {
-        // setTotal(total - price);
-    } else{
-        return
-    }
+      ));
   };
 
   const [showSuccessModal, setShowSuccessModal] = useState(false);
 
   useEffect(() => {
+
+    localStorage.setItem("cart", JSON.stringify(items));
+
     let sum = 0;
     for( var i = 0; i < items.length; i++){
       sum += (items[i].price * items[i].quantity)
@@ -79,9 +76,9 @@ export function CartProvider({ children }) {
 
       return () => clearTimeout(timer);
     }
-  },[items, showSuccessModal])
+  },[items, showSuccessModal, total, setTotal])
   
-
+  
   return (
     <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total, setTotal, showSuccessModal, setShowSuccessModal, removeFromCart }}>
       {children}
