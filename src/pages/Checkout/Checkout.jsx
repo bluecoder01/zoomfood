@@ -15,7 +15,7 @@ function Checkout() {
       <div className="col-2">
         <DetailsForm orderReady={detailsReady} setOrderReady={setDetailsReady}/>
         <Payment orderReady={paymentReady} setOrderReady={setPaymentReady}/>
-        <button type="submit" className="btn submit">Proceed</button>
+        <button type="submit" onClick={() => console.log(detailsReady, paymentReady)} className="btn submit">Proceed</button>
       </div>
     </div>
   );

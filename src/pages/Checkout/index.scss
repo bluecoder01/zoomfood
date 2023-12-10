@@ -81,6 +81,10 @@
   .btn{
     background-color: #FC8019;
     color: #f9f9f9;
+
+    &:hover{
+      background-color: #fa9c4f ;
+    }
   }
 
   .col-1 {
@@ -149,5 +153,27 @@
     &:has(> .error){
       border: 1px solid red;
     }
+  }
+}
+
+@media screen and (max-width:920px) {
+
+  .card-details form{
+    grid-template-columns: 1fr 1fr;
+    gap: 0 1rem;
+
+    & .card-number{
+      grid-column: span 2 !important;
+    }
+  }
+
+  .checkout{
+    box-shadow: none;
+  }
+  .checkout .col-1{
+    display: none;
+  }
+  .col-2{
+    padding-left: 8% !important;
   }
 }

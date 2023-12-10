@@ -49,7 +49,7 @@ function Payment({orderReady, setOrderReady}) {
     if(orderReady)
       setOrderReady(false)
 
-    if(cardNumberValid &  expiryMonthValid & expiryYearValid & cvvValid){
+    if((cardNumberValid &  expiryMonthValid & expiryYearValid & cvvValid) || selected === 'pay-on-delivery'){
       setOrderReady(true)
     }
   })
