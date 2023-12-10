@@ -1,12 +1,13 @@
 import React from "react";
-import { useState, createContext } from "react";
+import { createContext } from "react";
 import { CartProvider } from "./CartContext";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 export const DeliveryLocation = createContext(null);
 export const Cart = createContext({});
 
 function AppContext({ children }) {
-  const [deliveryLocation, setDeliveryLocation] = useState("");
+  const [deliveryLocation, setDeliveryLocation] = useLocalStorage('deliveryLocation', "");
 
   return (
     <DeliveryLocation.Provider

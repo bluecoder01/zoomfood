@@ -1,310 +1,312 @@
-
-
-.location-box-wrapper{
- @import "../../scss/global.scss";
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    height: 250px;
-    margin: 3% auto;
-    background: $clr-primary-100;
-    position: relative;
-    border-radius: 20px;
-    padding: 5%;
-    margin-top: 5vw;
-
-
-    &:before, &::after{
-        content: '';
-        position: absolute;
-        z-index: 1;
-    }
-
-    &::before{
-        top: 0;
-        left: 0;
-        background: url("./assets/hand-drawn-seamless-pattern-of-fast-food-doodle-illustration-vector-removebg-preview.png");
-        height: 100%;
-        width: 100%;
-        background-size: 40%;
-        opacity: .2;
-    }
-
-    &::after{
-        width:30%;
-        aspect-ratio: 1 / 1;
-        background: url("./assets/360_F_226912457_QVvCqo6Cfb1beT3KVbf2XnrQwDdQ251I-removebg-preview.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        bottom: 0;
-        right: 5%;
-        background-position: center;
-        z-index: 999;
-    }
-
-    > *{
-        z-index: 2;
-    }
-
-    /* Add this CSS to your stylesheet or in your HTML file's style tag */
-
-.location-form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin: 20px;
-}
-
-label {
-  font-size: 16px;
-  margin-bottom: 8px;
-  color: #333;
-}
-
-select {
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
-  margin-bottom: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Visually hide the label but keep it accessible for screen readers */
-// .visually-hidden {
-//   position: absolute;
-//   width: 1px;
-//   height: 1px;
-//   margin: -1px;
-//   padding: 0;
-//   overflow: hidden;
-//   clip: rect(0, 0, 0, 0);
-//   border: 0;
-// }
-
-/* Optional: Adjust styles for smaller screens */
-@media (max-width: 768px) {
-  label {
-    font-size: 14px;
-  }
-
-  select {
-    font-size: 12px;
-  }
-}
-
-}
-
-.vendor-card {
-    max-width: 300px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
-    height: 220px;
-  }
-
-  @media only screen and (max-width:700px){
-    .category{
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1em;
-      margin: auto;
-      margin-top: 2em;
-
-      .category-vendors{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 1.3em;
-
-        .vendor-card img{
-          aspect-ratio: 16/9;
-        }
-      }
-    }
-    .vendor-card{
-      width: 100%;
-      height: max-content;
-    }
-  }
-  
-  .vendor-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .vendor-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    aspect-ratio: 16/9;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-  }
-  
-  .vendor-card .details {
-    padding: 16px;
-  }
-  
-  .vendor-card .vendor-name {
-    margin: 0 0 8px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .vendor-card .vendor-rating {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-
-    svg{
-        color: #FC8019;
-        margin-right: .4em;
-    }
-  }
-  
-  .vendor-card .fa-heart,
-  .vendor-card .fa-heart-o {
-
-    position: absolute;
-    top: 16px;
-    right: 16px;
-    font-size: 17px;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-    color: white;
-    background-color: #FC8019;
-    border-radius: 50%;
-    padding: .5em;
-  }
-  
-  .vendor-card .fa-heart-o:hover {
-    color: #FC8019;
-  }
-  
-  h4.category-name {
-    font-size: 1.4rem;
-    font-weight: 600;
-  }
-
-  @media only screen and (min-width:500px) and (max-width:700px) {
-    .location-box-wrapper{
-      height: 200px;
-
-      &::after{
-        width: 40%;
-      }
-    }
-  }
-
-  @media only screen and (max-width:500px) {
-    
-    .location-box-wrapper{
-      height: 180px;
-
-      &::after{
-        width: 36%;
-      }
-    }
-
-  }
-
-  @media only screen and (min-width:700px){
-    
-  form {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 3%;
-
-    select {
-      padding: 1em 1.2em;
-      width: 50%;
-      min-width: 250px;
-      max-width: 400px;
-      border-radius: 8px;
-      box-shadow: none;
-      outline: none;
-      border: 2px solid #d4d4d4;
-      cursor: pointer;
-
-      &:focus {
-        outline: none;
-      }
-
-      &::placeholder {
-        color: #808080;
-        transition: all 500ms ease-out;
-      }
-
-      &:focus::placeholder {
-        color: #d8d8d8;
-      }
-    }
-  }
-
-  .category{
-    max-width: 80%;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
-    display: grid;
-    gap: 1em;
-
-    .category-vendors{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      align-items: flex-start;
-      gap: 3%;
-
-      @media screen and (min-width:700px) and (max-width:1024px){
-      grid-template-columns: 1fr 1fr 1fr;
-        
-      }
-    }
-
-  }  
-}
-
-
-.location-box-wrapper {
-  color: white;
-  justify-content: center;
-  gap: 1em;
-}
-
-.location-box-wrapper h1 {
-  font-size: 1.7em;
-  text-align: left;
-  width: 80%;
-  line-height: 1.1;
-}
-
-.location-box-wrapper p.location {
-  text-align: left;
-  font-size: 1.3em;
-  font-family: Poppins;
-
-  .fa-location-dot{
-    margin-right: .4em;
-  }
-}
-
-@media (max-width: 768px) {
+.vendors{
   .location-box-wrapper{
-    gap: .5em;
-  }
-  .location-box-wrapper h1 {
-    font-size: 1.3em; 
-  }
-  .location-box-wrapper p.location{
-    font-size: 1em;
-  }
+    @import "../../scss/global.scss";
+       display: flex;
+       flex-direction: column;
+       width: 80%;
+       height: 250px;
+       margin: 3% auto;
+       background: $clr-primary-100;
+       position: relative;
+       border-radius: 20px;
+       padding: 5%;
+       margin-top: 5vw;
+   
+   
+       &:before, &::after{
+           content: '';
+           position: absolute;
+           z-index: 1;
+       }
+   
+       &::before{
+           top: 0;
+           left: 0;
+           background: url("./assets/hand-drawn-seamless-pattern-of-fast-food-doodle-illustration-vector-removebg-preview.png");
+           height: 100%;
+           width: 100%;
+           background-size: 40%;
+           opacity: .2;
+       }
+   
+       &::after{
+           width:30%;
+           aspect-ratio: 1 / 1;
+           background: url("./assets/360_F_226912457_QVvCqo6Cfb1beT3KVbf2XnrQwDdQ251I-removebg-preview.png");
+           background-size: 100%;
+           background-repeat: no-repeat;
+           bottom: 0;
+           right: 5%;
+           background-position: center;
+           z-index: 999;
+       }
+   
+       > *{
+           z-index: 2;
+       }
+   
+       /* Add this CSS to your stylesheet or in your HTML file's style tag */
+   
+   .location-form {
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     margin: 20px;
+   }
+   
+   label {
+     font-size: 16px;
+     margin-bottom: 8px;
+     color: #333;
+   }
+   
+   select {
+     width: 100%;
+     padding: 10px;
+     font-size: 14px;
+     margin-bottom: 16px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+   }
+   
+   /* Visually hide the label but keep it accessible for screen readers */
+   // .visually-hidden {
+   //   position: absolute;
+   //   width: 1px;
+   //   height: 1px;
+   //   margin: -1px;
+   //   padding: 0;
+   //   overflow: hidden;
+   //   clip: rect(0, 0, 0, 0);
+   //   border: 0;
+   // }
+   
+   /* Optional: Adjust styles for smaller screens */
+   @media (max-width: 768px) {
+     label {
+       font-size: 14px;
+     }
+   
+     select {
+       font-size: 12px;
+     }
+   }
+   
+   }
+   
+   .vendor-card {
+       max-width: 300px;
+       border: 1px solid #ddd;
+       border-radius: 8px;
+       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+       overflow: hidden;
+       cursor: pointer;
+       transition: transform 0.3s ease-in-out;
+       position: relative;
+       overflow: hidden;
+       height: 220px;
+     }
+   
+     @media only screen and (max-width:700px){
+       .category{
+         width: 80%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1em;
+         margin: auto;
+         margin-top: 2em;
+   
+         .category-vendors{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           gap: 1.3em;
+   
+           .vendor-card img{
+             aspect-ratio: 16/9;
+           }
+         }
+       }
+       .vendor-card{
+         width: 100%;
+         height: max-content;
+       }
+     }
+     
+     .vendor-card:hover {
+       transform: scale(1.05);
+     }
+     
+     .vendor-card img {
+       width: 100%;
+       height: auto;
+       object-fit: cover;
+       aspect-ratio: 16/9;
+       border-top-left-radius: 8px;
+       border-top-right-radius: 8px;
+     }
+     
+     .vendor-card .details {
+       padding: 16px;
+     }
+     
+     .vendor-card .vendor-name {
+       margin: 0 0 8px;
+       font-size: 18px;
+       font-weight: bold;
+     }
+     
+     .vendor-card .vendor-rating {
+       margin: 0;
+       display: flex;
+       align-items: center;
+       font-size: 14px;
+   
+       svg{
+           color: #FC8019;
+           margin-right: .4em;
+       }
+     }
+     
+     .vendor-card .fa-heart,
+     .vendor-card .fa-heart-o {
+   
+       position: absolute;
+       top: 16px;
+       right: 16px;
+       font-size: 17px;
+       cursor: pointer;
+       transition: color 0.3s ease-in-out;
+       color: white;
+       background-color: #FC8019;
+       border-radius: 50%;
+       padding: .5em;
+     }
+     
+     .vendor-card .fa-heart-o:hover {
+       color: #FC8019;
+     }
+     
+     h4.category-name {
+       font-size: 1.4rem;
+       font-weight: 600;
+     }
+   
+     @media only screen and (min-width:500px) and (max-width:700px) {
+       .location-box-wrapper{
+         height: 200px;
+   
+         &::after{
+           width: 40%;
+         }
+       }
+     }
+   
+     @media only screen and (max-width:500px) {
+       
+       .location-box-wrapper{
+         height: 180px;
+   
+         &::after{
+           width: 36%;
+         }
+       }
+   
+     }
+   
+     @media only screen and (min-width:700px){
+       
+     .location-form form {
+       display: flex;
+       align-items: center;
+       justify-content: flex-start;
+       gap: 3%;
+   
+       select {
+         padding: 1em 1.2em;
+         width: 50%;
+         min-width: 250px;
+         max-width: 400px;
+         border-radius: 8px;
+         box-shadow: none;
+         outline: none;
+         border: 2px solid #d4d4d4;
+         cursor: pointer;
+   
+         &:focus {
+           outline: none;
+         }
+   
+         &::placeholder {
+           color: #808080;
+           transition: all 500ms ease-out;
+         }
+   
+         &:focus::placeholder {
+           color: #d8d8d8;
+         }
+       }
+     }
+   
+     .category{
+       max-width: 80%;
+       margin: 0 auto;
+       margin-bottom: 2.5rem;
+       display: grid;
+       gap: 1em;
+   
+       .category-vendors{
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         align-items: flex-start;
+         gap: 3%;
+   
+         @media screen and (min-width:700px) and (max-width:1024px){
+         grid-template-columns: 1fr 1fr 1fr;
+           
+         }
+       }
+   
+     }  
+   }
+   
+   
+   .location-box-wrapper {
+     color: white;
+     justify-content: center;
+     gap: 1em;
+   }
+   
+   .location-box-wrapper h1 {
+     font-size: 1.7em;
+     text-align: left;
+     width: 80%;
+     line-height: 1.1;
+   }
+   
+   .location-box-wrapper p.location {
+     text-align: left;
+     font-size: 1.3em;
+     font-family: Poppins;
+   
+     .fa-location-dot{
+       margin-right: .4em;
+     }
+   }
+   
+   @media (max-width: 768px) {
+     .location-box-wrapper{
+       gap: .5em;
+     }
+     .location-box-wrapper h1 {
+       font-size: 1.3em; 
+     }
+     .location-box-wrapper p.location{
+       font-size: 1em;
+     }
+   }
+   
 }
+

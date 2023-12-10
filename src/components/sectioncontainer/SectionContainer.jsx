@@ -4,7 +4,7 @@ import "./index.scss"
 function SectionContainer({ title, children }) {
   return (
     <>
-      <h4 className="title">{title}</h4>
+      {title && <h4 className="title">{title}</h4>}
       <div className='section-container'>
           {children}
       </div>

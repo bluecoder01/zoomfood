@@ -4,19 +4,23 @@ import CartItem from './CartItem';
 import "./index.scss";
 import CartContext from '../../contexts/CartContext';
 import data from "../../db/db.json";
+import { useNavigate } from 'react-router-dom';
 
 
 
-const Cart = ({ onClose }) => {
+const Cart = ({ onClose, onpage }) => {
+
+    const navigate = useNavigate()
 
     const { items, increaseQuantity, decreaseQuantity, total, removeFromCart } = useContext(CartContext);
 
-    // return items.reduce((total, item) => total + data.foods[item.itemId].price[item.option] * item.quantity, 0);
-
-    // const items = localStorage.getItem('cart') ? JSON.parse(localStorage.getItem('cart')) : [];
+    const checkout = () => {
+      onClose()
+      navigate('/checkout')
+    };
 
   return (
-    <div className="cart-overlay">
+    <div className={onpage ? 'cart-overlay on-page' : 'cart-overlay'} >
       <div className="cart">
         <h2>Shopping Cart</h2>
         {items.length === 0 ? (
@@ -39,17 +43,12 @@ const Cart = ({ onClose }) => {
             })}
           </div>
         )}
-        {items[0] && <p>Total: &#8358;{total}</p>}
-            <button onClick={onClose}>Close</button>
-            {items[0] && <button onClick={() => checkout()}>Checkout</button>}
+        {items[0] && <p className='total'>Total: &#8358;{total}</p>}
+            {onpage && <button onClick={onClose}>Close</button>}
+            {items[0] && onpage && <button onClick={() => checkout()}>Checkout</button>}
       </div>
     </div>
   );
-};
-
-const checkout = () => {
-  // Implement your checkout logic here
-  alert('Checkout functionality will be implemented here!');
 };
 
 export default Cart;

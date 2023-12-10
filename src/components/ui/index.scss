@@ -1,0 +1,29 @@
+.input-field {
+    margin-bottom: 20px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-field input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    max-width: 400px;
+  }
+  
+  .input-field input:focus {
+    outline: none;
+    border-color: #007bff; /* Adjust the color based on your design */
+  }
+  
+  .input-field .error {
+    color: red;
+    margin-top: 5px;
+  }
+  

@@ -1,6 +1,12 @@
 /* Add this to your styles.scss or equivalent */
 
-.cart-overlay {
+.cart-overlay:not(.on-page){
+  .item-details > p:nth-child(2){
+    display: none;
+  }
+}
+
+.cart-overlay.on-page{
     position: fixed;
     top: 0;
     left: 0;
@@ -95,6 +101,10 @@
       }
     }
   }
+
+  p.total{
+    margin: 1em 0;
+}
   
   /* Add this CSS to your stylesheet */
 .success-modal {

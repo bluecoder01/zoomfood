@@ -46,30 +46,6 @@
         margin-right: 16px;
         margin-bottom: 16px;
       }
-
-      input[type='radio']{
-        appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 1px solid #999;
-  border-radius: 50%;
-  outline: none;
-  box-shadow: 0 0 5px #999;
-  transition: box-shadow 0.3s ease;
-      }
-
-      input[type='radio']:before {
-        content: '';
-        display: block;
-        width: 60%;
-        height: 60%;
-        margin: 19% auto;
-        border-radius: 50%;
-      }
-      
-      input[type='radio']:checked:before {
-        background:  #FC8019;
-      }
       
       .options-toggle label {
         display: flex;
@@ -184,6 +160,30 @@
       }
     }
   
+  }
+
+  input[type='radio']{
+    appearance: none;
+width: 14px;
+height: 14px;
+border: 1px solid #999;
+border-radius: 50%;
+outline: none;
+box-shadow: 0 0 5px #999;
+transition: box-shadow 0.3s ease;
+  }
+
+  input[type='radio']:before {
+    content: '';
+    display: block;
+    width: 60%;
+    height: 60%;
+    margin: 19% auto;
+    border-radius: 50%;
+  }
+  
+  input[type='radio']:checked:before {
+    background:  #FC8019;
   }
   
   
