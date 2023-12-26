@@ -96,3 +96,42 @@ a{
 input, select, option{
 	font-family: Poppins;
 }
+
+/* HTML: <div class="loader"></div> */
+.loader {
+	width: 20%;
+	// height: 100vh;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background: 
+	  radial-gradient(farthest-side,#ffa516 94%,#0000) top/10% 10% no-repeat,
+	  conic-gradient(#0000 30%,#ffa516);
+	-webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 10%),#000 0);
+	animation: l13 1s infinite cubic-bezier(1, 0.275, .66, 1);
+  }
+  @keyframes l13{ 
+	100%{transform: rotate(1turn)}
+  }
+
+  .loader-wrapper{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #0000009c;	
+
+	p{
+		font-size: 32px;
+		font-weight: 400;
+		color: white;
+		background: #FC8019;
+		padding: 1rem 1.5rem;
+		margin-top: 20px;
+		border-radius: 10px;
+	}
+  }

@@ -138,9 +138,11 @@
   .payment-details > form{
     margin: 1rem 0;
     gap: 1rem;
+    
     &, & > *{
       display: flex;
     }
+
   }
 
   input [type = 'text'] {

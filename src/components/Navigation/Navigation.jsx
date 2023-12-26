@@ -9,7 +9,7 @@ import "./index.scss";
 import Burger from "../burger";
 import { Link, useNavigate } from "react-router-dom";
 
-function Navigation({ isCartVisible, toggleCart}) {
+function Navigation({ setNavOpen, navOpen, toggleCart}) {
 
   const [query, setQuery] = useState('');
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ function Navigation({ isCartVisible, toggleCart}) {
       <Link to={"/"}>
         <Logo className="logo" />
       </Link>
-      <nav>
+      <nav className={navOpen ? 'active' : ''}>
         <ul>
           <a href={"/"}>Home</a>
           <a href={"/vendors"}>Vendors</a>
@@ -47,7 +47,7 @@ function Navigation({ isCartVisible, toggleCart}) {
         </div>
       </nav>
 
-      <Burger />
+      <Burger navOpen={navOpen} setNavOpen={setNavOpen}/>
     </header>
   );
 }

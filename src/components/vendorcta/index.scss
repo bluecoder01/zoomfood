@@ -1,0 +1,41 @@
+// VendorCTA.scss
+
+.vendor-cta.section-container {
+    position: relative;
+    background: url('https://assets-global.website-files.com/60de0341d42817a5aa37c9b6/60f658b93401e788b2b97129_604f9e31ca88d1594299e38b_Thrive-as-farmers-market-vendor-photo.jpeg') center/cover no-repeat; // Replace 'your-image-background.jpg' with your image URL
+    height: 300px; // Adjust the height as needed
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: top;
+    background-size: cover;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8); // Adjust the transparency as needed
+    }
+  
+    .vendor-cta-wrapper {
+      text-align: center;
+      color: white; // Set the text color to white or another appropriate color
+      z-index: 20;
+  
+      .title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+  
+      .promo-txt {
+        font-size: 1rem; // Adjust the font size as needed
+        margin-bottom: 20px;
+        max-width:600px;
+        line-height: 1.2;
+      }
+    }
+  }
+  

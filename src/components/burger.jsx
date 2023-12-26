@@ -1,23 +1,10 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./burger.scss";
 
-function Burger() {
-
-    const [active, setActive] = useState('');
-
-    const openNav = (e) => {
-      if(active === ''){
-        setActive('active')
-        document.querySelector('nav').classList.add('active');
-      }else{
-        setActive('')
-        document.querySelector('nav').classList.remove('active');
-      }
-  };
+function Burger({setNavOpen, navOpen}) {
     
-
   return (
-    <svg onClick={openNav} className={`${active} ham hamRotate ham8`} viewBox="0 0 100 100" width="80">
+    <svg onClick={()=> setNavOpen(!navOpen)} className={`${navOpen && 'active'} ham hamRotate ham8`} viewBox="0 0 100 100" width="80">
       <path
         class="line top"
         d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20"
