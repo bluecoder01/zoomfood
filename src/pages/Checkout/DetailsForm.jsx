@@ -47,7 +47,7 @@ function DetailsForm({orderReady, setOrderReady}) {
     <div className="details-form">
       <h3 className="title">Who's eating Today?</h3>
 
-      <form onSubmit={(e) => { e.preventDefault(); handleSubmit()}}>
+      <div onSubmit={(e) => { e.preventDefault(); handleSubmit()}}>
         <div className="contact-details">
           <InputField
             field={"name"}
@@ -77,7 +77,7 @@ function DetailsForm({orderReady, setOrderReady}) {
             errorMessage='Input a valid Phone No.'
           />
         </div>
-      </form>
+      </div>
       <Location />
     </div>
   );

@@ -14,6 +14,7 @@
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
       "restaurantId": 1,
+      "categories": 2,
       "tags": ["pizza", "suya", "chicken", "fast food"]
     },
     {
@@ -29,6 +30,7 @@
       "image": "https://guardian.ng/wp-content/uploads/2022/10/Stirfry-spaghetti.jpeg",
       "options": { "chicken": 0, "turkey": 1 },
       "restaurantId": 1,
+      "categories": 2,
       "tags": ["spaghetti", "stir fry", "chicken", "turkey"]
     },
     {
@@ -45,6 +47,7 @@
       "image": "https://pbs.twimg.com/media/Fy-LqdSWcAI4-hH?format=jpg&name=large",
       "options": { "beef": 0, "extraRice": 1, "chicken": 2 },
       "restaurantId": 0,
+      "categories": 2,
       "tags": ["jollof rice", "party food"]
     },
     {
@@ -60,6 +63,7 @@
       "image": "https://www.thechunkychef.com/wp-content/uploads/2021/03/Chicken-Shawarma-recipe-card.jpg",
       "options": { "small": 0, "jumbo": 1 },
       "restaurantId": 2,
+      "categories": 2,
       "tags": ["shawarma", "chicken"]
     },
     {
@@ -74,6 +78,7 @@
       "image": "https://i.pinimg.com/736x/fe/48/1f/fe481fcb50d8d971d732487640e5c7dd.jpg",
       "options": { "small": 0 },
       "restaurantId": 8,
+      "categories": 2,
       "tags": ["meatpie"]
     },
     {
@@ -90,6 +95,7 @@
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
       "restaurantId": 0,
+      "categories": 2,
       "tags": ["shawarma", "chicken"]
     },
     {
@@ -104,6 +110,7 @@
       "image": "https://assets.epicurious.com/photos/57c5c6d9cf9e9ad43de2d96e/1:1/w_1600,c_limit/the-ultimate-hamburger.jpg",
       "options": { "single": 0 },
       "restaurantId": 1,
+      "categories": 2,
       "tags": ["hamburger"]
     },
     {
@@ -120,6 +127,7 @@
       "image": "https://nigeriatravelsmart.com/wp-content/uploads/2020/02/PIZZA.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
       "restaurantId": 1,
+      "categories": 2,
       "tags": ["pizza", "suya", "chicken", "fast food"]
     },
     {
@@ -136,6 +144,7 @@
       "image": "https://pbs.twimg.com/media/Fy-LqdSWcAI4-hH?format=jpg&name=large",
       "options": { "Beef": 0, "Chicken": 1, "Fish": 2 },
       "restaurantId": 0,
+      "categories": 2,
       "tags": ["mixed rice", "beef", "chicken", "fish"]
     },
     {
@@ -148,8 +157,9 @@
       "source": "Buka",
       "deliveryTime": "30 mins",
       "image": "https://www.tastingtable.com/img/gallery/egusi-is-the-hearty-nigerian-soup-you-should-know/l-intro-1667997223.jpg",
-      "options": {"normal":0},
+      "options": { "normal": 0 },
       "restaurantId": 3,
+      "categories": 2,
       "tags": ["fufu", "egusi"]
     },
     {
@@ -166,6 +176,7 @@
       "image": "https://www.myactivekitchen.com/wp-content/uploads/2015/03/suya-burger.600x900-8.jpg",
       "options": { "small": 0, "medium": 1, "large": 2 },
       "restaurantId": 5,
+      "categories": 2,
       "tags": ["suya", "burger"]
     },
     {
@@ -178,8 +189,9 @@
       "source": "Buka",
       "deliveryTime": "10 mins",
       "image": "https://lagos.echoesofcalabar.com/wp-content/uploads/2020/06/pap-and-akara.jpeg",
-      "options": {"single": 0},
+      "options": { "single": 0 },
       "restaurantId": 3,
+      "categories": 2,
       "tags": ["akara", "pap"]
     },
     {
@@ -196,6 +208,7 @@
       "image": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium",
       "options": { "single": 0, "double": 1, "jumbo": 2 },
       "restaurantId": 4,
+      "categories": 2,
       "tags": ["shawarma", "chicken"]
     }
   ],
@@ -212,25 +225,125 @@
     { "locationName": "Off-Campus" }
   ],
 
-  "categories":[
-    {"id":0, "categoryName":"Breakfast", "img": "https://www.eatingwell.com/thmb/ZIsM-f-uVmqWx7JlJNsBFMCVOaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HashBrown-5-e1941c86066346e8a592e4c589d4933d.jpg"},
-    {"id":1, "categoryName":"Spicy", "img": "https://media.cnn.com/api/v1/images/stellar/prod/220926162616-14-spicy-dishes-chicken-wings.jpg?c=original&q=h_618,c_fill"},
-    {"id":2, "categoryName":"Full Meal", "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/01/09/16/big-plate-of-food.jpg?width=1200"},
-    {"id":3, "categoryName":"Snacks", "img": "https://cdn.vox-cdn.com/thumbor/wZpc9Y2Efrp2G4REmFhSNy3z72U=/0x0:5184x3456/920x613/filters:focal(2178x1314:3006x2142):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67431760/Snacks.0.jpg"},
-    {"id":4, "categoryName":"Groceries", "img": "https://assets.bonappetit.com/photos/60ef61ea1cd5ffae42c1d614/1:1/w_1687,h_1687,c_limit/Garri.jpg"},
-    {"id":5, "categoryName":"Vegan", "img": "https://images.immediate.co.uk/production/volatile/sites/30/2023/06/GettyImages-1416818056-6ecd1e0.jpg?quality=90&resize=556,505"},
-    {"id":6, "categoryName":"Treats", "img": "https://visitsantaclarita.com/files/2018/08/sweet-and-treats-header.jpg"}
+  "categories": [
+    {
+      "id": 0,
+      "categoryName": "Breakfast",
+      "img": "https://www.eatingwell.com/thmb/ZIsM-f-uVmqWx7JlJNsBFMCVOaY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/HashBrown-5-e1941c86066346e8a592e4c589d4933d.jpg"
+    },
+    {
+      "id": 1,
+      "categoryName": "Spicy",
+      "img": "https://media.cnn.com/api/v1/images/stellar/prod/220926162616-14-spicy-dishes-chicken-wings.jpg?c=original&q=h_618,c_fill"
+    },
+    {
+      "id": 2,
+      "categoryName": "Full Meal",
+      "img": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/01/09/16/big-plate-of-food.jpg?width=1200"
+    },
+    {
+      "id": 3,
+      "categoryName": "Snacks",
+      "img": "https://cdn.vox-cdn.com/thumbor/wZpc9Y2Efrp2G4REmFhSNy3z72U=/0x0:5184x3456/920x613/filters:focal(2178x1314:3006x2142):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/67431760/Snacks.0.jpg"
+    },
+    {
+      "id": 4,
+      "categoryName": "Groceries",
+      "img": "https://assets.bonappetit.com/photos/60ef61ea1cd5ffae42c1d614/1:1/w_1687,h_1687,c_limit/Garri.jpg"
+    },
+    {
+      "id": 5,
+      "categoryName": "Vegan",
+      "img": "https://images.immediate.co.uk/production/volatile/sites/30/2023/06/GettyImages-1416818056-6ecd1e0.jpg?quality=90&resize=556,505"
+    },
+    {
+      "id": 6,
+      "categoryName": "Treats",
+      "img": "https://visitsantaclarita.com/files/2018/08/sweet-and-treats-header.jpg"
+    }
   ],
 
-  "restaurants":[
-    {"restaurantId": 0, "restaurantName": "Item 7 go", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.0, "aveDeliveryTime": 20, "isTrending": true, "img":"https://lh3.googleusercontent.com/p/AF1QipNcUOuVA1N83t9dvECkWke7wr0k0v7XpKmzfy8D=s680-w680-h510"},
-    {"restaurantId": 1, "restaurantName": "Dominos", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 33, "isTrending": true, "img":"https://lh5.googleusercontent.com/p/AF1QipMfo-5ubSwd80WswisFpiX_wDx3tDCeFCBYLT2X=w500-h500-k-no"},
-    {"restaurantId": 2, "restaurantName": "Rita's Treats", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.0, "aveDeliveryTime": 30, "isTrending": false, "img":"https://lirp.cdn-website.com/62d17296/dms3rep/multi/opt/ice_cream_truck-100a9521-640w.jpg"},
-    {"restaurantId": 3, "restaurantName": "Buka", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 15, "isTrending": true, "img":"https://arbiterz.com/wp-content/uploads/2018/09/food.jpg"},
-    {"restaurantId": 4, "restaurantName": "Bookie's Noshup", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 3.5, "aveDeliveryTime": 23, "isTrending": false, "img":"https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium"},
-    {"restaurantId": 5, "restaurantName": "Grub Town", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.0, "aveDeliveryTime": 18, "isTrending": false, "img":"https://lh5.googleusercontent.com/p/AF1QipPaDn-xNT3KWWF1r8QECw3MLj80KX0TvxKFTFn1=w1080-k-no"},
-    {"restaurantId": 6, "restaurantName": "Ushies", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 3.5, "aveDeliveryTime": 22, "isTrending": false, "img":"https://scontent.flos5-3.fna.fbcdn.net/v/t1.6435-9/174685558_4280900808596047_1657268825188190668_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c2f564&_nc_ohc=ACwXmiKLhMUAX-nTrPc&_nc_ht=scontent.flos5-3.fna&oh=00_AfBmbc01yYAfE4bvkR0Tg1B9ASzYxlItIX7tD8GRKU2dEg&oe=657BFC7C"},
-    {"restaurantId": 7, "restaurantName": "The Bakery", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 15, "isTrending": true, "img":"https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"},
-    {"restaurantId": 8, "restaurantName": "Nutri C", "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.", "aveRating": 4.5, "aveDeliveryTime": 13, "isTrending": false, "img":"https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"}
+  "restaurants": [
+    {
+      "restaurantId": 0,
+      "restaurantName": "Item 7 go",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.0,
+      "aveDeliveryTime": 20,
+      "isTrending": true,
+      "img": "https://lh3.googleusercontent.com/p/AF1QipNcUOuVA1N83t9dvECkWke7wr0k0v7XpKmzfy8D=s680-w680-h510"
+    },
+    {
+      "restaurantId": 1,
+      "restaurantName": "Dominos",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.5,
+      "aveDeliveryTime": 33,
+      "isTrending": true,
+      "img": "https://lh5.googleusercontent.com/p/AF1QipMfo-5ubSwd80WswisFpiX_wDx3tDCeFCBYLT2X=w500-h500-k-no"
+    },
+    {
+      "restaurantId": 2,
+      "restaurantName": "Rita's Treats",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.0,
+      "aveDeliveryTime": 30,
+      "isTrending": false,
+      "img": "https://lirp.cdn-website.com/62d17296/dms3rep/multi/opt/ice_cream_truck-100a9521-640w.jpg"
+    },
+    {
+      "restaurantId": 3,
+      "restaurantName": "Buka",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.5,
+      "aveDeliveryTime": 15,
+      "isTrending": true,
+      "img": "https://arbiterz.com/wp-content/uploads/2018/09/food.jpg"
+    },
+    {
+      "restaurantId": 4,
+      "restaurantName": "Bookie's Noshup",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 3.5,
+      "aveDeliveryTime": 23,
+      "isTrending": false,
+      "img": "https://pbs.twimg.com/media/Fmq7sTvXoAAMd35?format=jpg&name=medium"
+    },
+    {
+      "restaurantId": 5,
+      "restaurantName": "Grub Town",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.0,
+      "aveDeliveryTime": 18,
+      "isTrending": false,
+      "img": "https://lh5.googleusercontent.com/p/AF1QipPaDn-xNT3KWWF1r8QECw3MLj80KX0TvxKFTFn1=w1080-k-no"
+    },
+    {
+      "restaurantId": 6,
+      "restaurantName": "Ushies",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 3.5,
+      "aveDeliveryTime": 22,
+      "isTrending": false,
+      "img": "https://scontent.flos5-3.fna.fbcdn.net/v/t1.6435-9/174685558_4280900808596047_1657268825188190668_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c2f564&_nc_ohc=ACwXmiKLhMUAX-nTrPc&_nc_ht=scontent.flos5-3.fna&oh=00_AfBmbc01yYAfE4bvkR0Tg1B9ASzYxlItIX7tD8GRKU2dEg&oe=657BFC7C"
+    },
+    {
+      "restaurantId": 7,
+      "restaurantName": "The Bakery",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.5,
+      "aveDeliveryTime": 15,
+      "isTrending": true,
+      "img": "https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"
+    },
+    {
+      "restaurantId": 8,
+      "restaurantName": "Nutri C",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam. Quasi maxime iusto architecto omnis cum tenetur quaerat numquam.",
+      "aveRating": 4.5,
+      "aveDeliveryTime": 13,
+      "isTrending": false,
+      "img": "https://lh3.googleusercontent.com/p/AF1QipOAg2mF1mFo2FzIY0iLLiZBOMBSVbQMONrxFK4H=s680-w680-h510"
+    }
   ]
 }

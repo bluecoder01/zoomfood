@@ -6,7 +6,7 @@ const CartContext = createContext();
 export function CartProvider({ children }) {
   const [items, setItems] = useLocalStorage('cartItems', []);
   const [total, setTotal] = useLocalStorage('cartTotal', 0);
-
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
 
 
   const addToCart = (itemId, option, quantity, price) => {
@@ -57,8 +57,6 @@ export function CartProvider({ children }) {
       ));
   };
 
-  const [showSuccessModal, setShowSuccessModal] = useState(false);
-
   useEffect(() => {
 
     localStorage.setItem("cart", JSON.stringify(items));
@@ -80,7 +78,7 @@ export function CartProvider({ children }) {
   
   
   return (
-    <CartContext.Provider value={{ items, addToCart, increaseQuantity, decreaseQuantity, total, setTotal, showSuccessModal, setShowSuccessModal, removeFromCart }}>
+    <CartContext.Provider value={{ items, setItems, addToCart, increaseQuantity, decreaseQuantity, total, setTotal, showSuccessModal, setShowSuccessModal, removeFromCart }}>
       {children}
     </CartContext.Provider>
   );

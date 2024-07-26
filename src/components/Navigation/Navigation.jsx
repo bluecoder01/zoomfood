@@ -33,8 +33,8 @@ function Navigation({ setNavOpen, navOpen, toggleCart}) {
         <ul>
           <a href={"/"}>Home</a>
           <a href={"/vendors"}>Vendors</a>
-          <a href={"/"}>Categories</a>
-          <a href={"/"}>About Us</a>
+          <a href={"/categories"}>Categories</a>
+          <a href={"/contact"}>Contact Us</a>
         </ul>
 
         <div className="col-3">

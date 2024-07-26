@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Cart from "../../components/Cart/Cart";
 import DetailsForm from "./DetailsForm";
 import Payment from "./Payment";
 import Loader from "../../components/ui/Loader";
 import { useNavigate } from "react-router-dom";
+import CartContext from "../../contexts/CartContext";
 
 function Checkout() {
   const [detailsReady, setDetailsReady] = useState(false);
   const [paymentReady, setPaymentReady] = useState(false);
   const [validating, setValidating] = useState(false);
+  const {setItems} = useContext(CartContext)
 
   const navigate = useNavigate();
 
@@ -18,6 +20,7 @@ function Checkout() {
     if (paymentReady & detailsReady) {
       setTimeout(() => {
         setValidating(false);
+        setItems([])
         navigate("/");
       }, 4000);
     } else {

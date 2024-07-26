@@ -17,7 +17,6 @@ function AppContext({ children }) {
         {children}
       </CartProvider>
       
-      
     </DeliveryLocation.Provider>
   );
 }

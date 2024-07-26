@@ -1,6 +1,9 @@
 
 
   .product-card {
+    position: relative;
+    overflow: hidden;
+
     @import "../../scss/global.scss";
     text-transform: capitalize;
     background: $clr-neutral-300;
@@ -57,8 +60,35 @@
       margin-bottom: 1.5rem;
     }
 
-    .svg-inline--fa {
+    .svg-inline--fa:not(.fa-cart-plus) {
       color: $clr-primary-100;
+    }
+    .fa-check{
+      color: white !important;
+    }
+
+
+    div.add-to-cart{
+      position: absolute;
+      top: 5%;
+      right: 0;
+      background-color: $clr-primary-100;
+      padding: .4em 1em;
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+      opacity: 0;
+      transform: translateX(30%);
+      transition: all .3s ease-out;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $clr-primary-300;
+      }
+    }
+
+    &:hover .add-to-cart{
+      opacity: 1;
+      transform: translateX(0);
     }
   }
 

@@ -12,6 +12,8 @@ import Cart from '../components/Cart/Cart';
 import CartContext from '../contexts/CartContext';
 import SuccessModal from '../components/Cart/SuccessModal';
 import Checkout from '../pages/Checkout/Checkout';
+import Categories from '../pages/Categories/Categories';
+import Contact from '../pages/Contact/Contact';
 
 function Layout() {
   const [isCartVisible, setIsCartVisible] = useState(false);
@@ -38,11 +40,13 @@ function Layout() {
       {isCartVisible && <Cart onpage={true} onClose={() => setIsCartVisible(false)}/> }
         <Routes>
           <Route path='/' exact element={<Home /> } />
+          <Route path='/contact' exact element={<Contact /> } />
           <Route path='/vendors' element={<Vendors /> } />
           <Route path='/products/:id' exact element={<Product /> } />
           <Route path='/search/:query' exact element={<Search /> } />
           <Route path='/vendors/:restaurantId' exact element={<RestaurantPage /> } />
           <Route path='/checkout' exact element={<Checkout /> } />
+          <Route path='/categories' exact element={<Categories /> } />
         </Routes>
       {showSuccessModal && <SuccessModal  /> }
     </div>
